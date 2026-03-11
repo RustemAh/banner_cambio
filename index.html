@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Banner Debate Archi - Solo Video</title>
+
+<style>
+  body, html {
+    margin:0;
+    padding:0;
+    font-family: Arial, sans-serif;
+    background:#000; /* opcional, para ver el contorno */
+  }
+
+  .banner-container {
+    width:386px;
+    height:500px;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+  }
+
+  .banner-img {
+    width:386px;
+    height:500px;
+    display:block;
+  }
+
+  /* VIDEO sobre el banner en formato vertical */
+  .banner-video {
+    position:absolute;
+    top:200px;    /* distancia desde arriba */
+    left:14px;    /* margen lateral */
+    width:360px;  
+    height:203px; /* 16:9 aprox para 360px */
+    border:0;
+    display:block;
+  }
+</style>
+</head>
+
+<body>
+
+<div class="banner-container">
+
+  <!-- Imagen del banner (vertical) CAMBIADA -->
+  <img class="banner-img"
+       src="https://www.epicentrochile.com/wp-content/uploads/2025/12/banner-especial_DEBATE_MOV2.png"
+       alt="Banner Debate Archi">
+
+  <!-- VIDEO integrado sobre el banner (RudoVideo) -->
+  <iframe
+    class="banner-video"
+    src="https://janux-tv.senado.cl/front/video_player_home.html"
+    allowfullscreen
+    frameborder="0"
+    scrolling="no"
+    allow="autoplay; fullscreen">
+  </iframe>
+
+</div>
+
+</body>
+</html>
