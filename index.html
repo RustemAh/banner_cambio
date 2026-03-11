@@ -10,7 +10,7 @@
     margin:0;
     padding:0;
     font-family: Arial, sans-serif;
-    background:#000; /* opcional, para ver el contorno */
+    background:#000; 
   }
 
   .banner-container {
@@ -19,23 +19,26 @@
     margin:auto;
     position:relative;
     overflow:hidden;
+    background-color: #222; /* Fondo por si la imagen tarda en cargar */
   }
 
   .banner-img {
     width:386px;
     height:500px;
     display:block;
+    object-fit: cover;
   }
 
-  /* VIDEO sobre el banner en formato vertical */
+  /* VIDEO sobre el banner */
   .banner-video {
     position:absolute;
-    top:100px;    /* distancia desde arriba */
-    left:14px;    /* margen lateral */
+    top:100px;    /* Ajusta según el diseño de tu imagen */
+    left:13px;    /* Centrado manual basado en tu ancho */
     width:360px;  
-    height:203px; /* 16:9 aprox para 360px */
+    height:203px; 
     border:0;
     display:block;
+    background: #000;
   }
 </style>
 </head>
@@ -44,19 +47,18 @@
 
 <div class="banner-container">
 
-  <!-- Imagen del banner (vertical) CAMBIADA -->
   <img class="banner-img"
-       src="https://www.epicentrochile.com/wp-content/uploads/2026/03/Sin-titulo-1.jpg"
+       src="https://www.epicentrochile.com/wp-content/uploads/2026/03/CAMBIO_MOV.jpg"
        alt="Banner Debate Archi">
 
-  <!-- VIDEO integrado sobre el banner (RudoVideo) -->
   <iframe
     class="banner-video"
-    src="https://www.youtube.com/live/6m5IXZk-oHE?si=IYjkEBrKqkfXTK8_"
-    allowfullscreen
+    src="https://www.youtube.com/embed/6m5IXZk-oHE?autoplay=1&mute=1&rel=0"
+    title="YouTube video player"
     frameborder="0"
-    scrolling="no"
-    allow="autoplay; fullscreen">
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
   </iframe>
 
 </div>
